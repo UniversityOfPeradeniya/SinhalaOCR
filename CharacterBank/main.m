@@ -2,7 +2,7 @@ clear all;
 close all;
 clc;
 
-a = imread('out0.png');
+a = imread('0.png');
 %a = imcrop(a);
 a = imrotate(a,90);
 widthofSpace = 50; %50px space between spaces

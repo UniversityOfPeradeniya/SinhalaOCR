@@ -1,6 +1,6 @@
 function[]= segment(a,lineNumber)
 
-
+folder = 'testChars/';
 
 %a = imread('sample.png');
 %imshow(a);
@@ -139,7 +139,7 @@ while idx<=iterations
     %figure,imshow(finalImage);
     
     %save image
-    name = ['char/',int2str(idx+lineNumber*100),'.png'];
+    name = [folder,int2str(idx+lineNumber*100),'.png'];
     imwrite(imcomplement(finalImage),name);
     disp(name);
     idx = idx+1;
