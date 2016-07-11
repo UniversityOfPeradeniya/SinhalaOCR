@@ -1,5 +1,6 @@
 
-function[] = main (fileName)
+function[] =main(fileName)
+clear all;
 close all;
 clc;
 
@@ -80,7 +81,4 @@ while idx<length(windows)
          
     end
     idx = idx+1;
-end
-
-return;
 end

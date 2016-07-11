@@ -139,18 +139,15 @@ while idx<=iterations
     %figure,imshow(finalImage);
     
     %Check whether this is an all black image
-    cropedImage = finalImage(size(finalImage,1)/2-50:size(finalImage,1)/2+50,:);
-    blackPixels = sum(sum(cropedImage));
+    ca(size(a,1)/2-1:size(a,1)/2+1,:)
+    blackPixels = sum(sum(finalImage));
     disp('black pixesl');
     disp(blackPixels);
     
     %save image
-    if blackPixels<16000
-        %if this is a complete black one I wont save
-        name = [folder,lineNumber,int2str(idx-1),'.png'];
-        imwrite(imcomplement(finalImage),name);
-        disp(name);
-    end
+    name = [folder,lineNumber,int2str(idx-1),'.png'];
+    imwrite(imcomplement(finalImage),name);
+    disp(name);
     idx = idx+1;
     %disp('idx');
     %disp(idx);
