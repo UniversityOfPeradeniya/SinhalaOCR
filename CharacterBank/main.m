@@ -72,8 +72,8 @@ while idx<length(windows)
          oneLine = i(:,image(1):image(2));
          originalLine = imrotate(oneLine,-90);
          passNo = [count,num2str(passCounter)];
-         disp('passNo');
-         disp(passNo);
+         %disp('passNo');
+         %disp(passNo);
          segment(originalLine,passNo);
          passCounter = passCounter+1;
          image = [];
