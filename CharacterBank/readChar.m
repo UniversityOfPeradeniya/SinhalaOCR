@@ -1,7 +1,10 @@
+
+function [] = readChar(fname)
+
 close all;
-clear;
-clc;
-fname = '402';
+%clear;
+%clc;
+%fname = '4902';
 char = imread([fname,'.png']);
 fileID = fopen([fname,'.txt'],'w');
 char = imcomplement(char);
@@ -398,3 +401,5 @@ figure, plot(cutPoints);
 fprintf(fileID,'\n');
 fclose(fileID);
 return
+
+end
