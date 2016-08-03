@@ -7,6 +7,7 @@ close all;
 %fname = '4902';
 char = imread([fname,'.png']);
 fileID = fopen([fname,'.txt'],'w');
+fileID2 = fopen([fname,'-d.txt'],'w');
 char = imcomplement(char);
 char2 = char;
 figure,imshow(char);
@@ -94,9 +95,14 @@ while i<90
     startpx = 0;
     endpx = 0;
     midpx = [];
-    %disp(size(blurredArray,2));
+    %disp(max(max(blurredArray)));
+    if(max(max(blurredArray))==1)
+    
+    blurredArray = uint8(blurredArray.*255);
+    end
     for n=1:size(blurredArray,2)
         val = blurredArray(1,n);
+        %disp(val);
         if (val>200 && ~countstarted)
             startpx = n;
             countstarted = true;
@@ -132,6 +138,10 @@ while i<90
     midArray =  padarray(midpx,10-size(midpx,1),0,'post');
     %fprintf('angle %d Cutting points \n',i)
     %fprintf('%d ',midArray);
+    fprintf(fileID2,'%d ',[min(midArray),max(midArray),sum(midArray)]);
+    fprintf(fileID2,'%d ',min(midArray));
+    
+    fprintf('%d ',[min(midArray),max(midArray),sum(midArray)]);
     %fprintf('\n');
     fprintf(fileID,'%d ',size(midpx,1));
     cutPoints = [cutPoints,size(midpx,1)];
@@ -141,7 +151,7 @@ end
 
 
 %angles from 90 to 180
-i = 390;
+i = 90;
 step = 1;
 blurPad = 8;
 while i<180
@@ -181,6 +191,10 @@ while i<180
     endpx = 0;
     midpx = [];
     %disp(size(blurredArray,2));
+    if(max(max(blurredArray))==1)
+    
+    blurredArray = uint8(blurredArray.*255);
+    end
     for n=1:size(blurredArray,2)
         val = blurredArray(1,n);
         if (val>200 && ~countstarted)
@@ -218,6 +232,8 @@ while i<180
     midArray =  padarray(midpx,10-size(midpx,1),0,'post');
     %fprintf('angle %d Cutting points ',i)
     %fprintf('%d ',midArray);
+    fprintf(fileID2,'%d ',[min(midArray),max(midArray),sum(midArray)]);
+    fprintf('%d ',[min(midArray),max(midArray),sum(midArray)]);
     %fprintf('\n');
     fprintf(fileID,'%d ',size(midpx,1));
     cutPoints = [cutPoints,size(midpx,1)];
@@ -266,6 +282,10 @@ while i<270
     endpx = 0;
     midpx = [];
     %disp(size(blurredArray,2));
+    if(max(max(blurredArray))==1)
+    
+    blurredArray = uint8(blurredArray.*255);
+    end
     for n=1:size(blurredArray,2)
         val = blurredArray(1,n);
         if (val>200 && ~countstarted)
@@ -303,6 +323,8 @@ while i<270
     midArray =  padarray(midpx,10-size(midpx,1),0,'post');
     %fprintf('angle %d Cutting points ',i)
     %fprintf('%d ',midArray);
+    fprintf(fileID2,'%d ',[min(midArray),max(midArray),sum(midArray)]);
+    fprintf('%d ',[min(midArray),max(midArray),sum(midArray)]);
     %fprintf('\n');
     fprintf(fileID,'%d ',size(midpx,1));
     cutPoints = [cutPoints,size(midpx,1)];
@@ -351,6 +373,10 @@ while i<360
     endpx = 0;
     midpx = [];
     %disp(size(blurredArray,2));
+    if(max(max(blurredArray))==1)
+    
+    blurredArray = uint8(blurredArray.*255);
+    end
     for n=1:size(blurredArray,2)
         val = blurredArray(1,n);
         if (val>200 && ~countstarted)
@@ -388,6 +414,8 @@ while i<360
     midArray =  padarray(midpx,10-size(midpx,1),0,'post');
     %fprintf('angle %d Cutting points ',i)
     %fprintf('%d ',midArray);
+    fprintf(fileID2,'%d ',[min(midArray),max(midArray),sum(midArray)]);
+    fprintf('%d ',[min(midArray),max(midArray),sum(midArray)]);
     %fprintf('\n');
     fprintf(fileID,'%d ',size(midpx,1));
     cutPoints = [cutPoints,size(midpx,1)];
@@ -400,6 +428,7 @@ figure, imshow(char2);
 figure, plot(cutPoints);
 fprintf(fileID,'\n');
 fclose(fileID);
+fclose(fileID2);
 return
 
 end

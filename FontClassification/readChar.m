@@ -7,10 +7,13 @@ close all;
 %fname = '4902';
 char = imread([fname,'.png']);
 fileID = fopen([fname,'.txt'],'w');
+fileID2 = fopen([fname,'-d.txt'],'w');
 char = imcomplement(char);
 char2 = char;
 figure,imshow(char);
 originaldim = size(char);
+
+globalcount = 0;
 
 
 figure
@@ -137,6 +140,18 @@ while i<90
     midArray =  padarray(midpx,10-size(midpx,1),0,'post');
     %fprintf('angle %d Cutting points \n',i)
     %fprintf('%d ',midArray);
+    if(size(midpx,1)==0)
+    midpx = [midpx;0];
+    end
+    %fprintf(fileID2,'%d ',[min(midArray),max(midArray),sum(midArray)]);
+    fprintf(fileID2,'%d ',min(min(midpx)));
+    fprintf(fileID2,'%d ',max(max(midpx)));
+    fprintf(fileID2,'%d ',sum(sum((midpx))));
+    %globalcount = globalcount+3;
+    %disp('<90');
+    %disp(globalcount);
+    
+    %fprintf('%d ',[min(midArray),max(midArray),sum(midArray)]);
     %fprintf('\n');
     fprintf(fileID,'%d ',size(midpx,1));
     cutPoints = [cutPoints,size(midpx,1)];
@@ -227,6 +242,17 @@ while i<180
     midArray =  padarray(midpx,10-size(midpx,1),0,'post');
     %fprintf('angle %d Cutting points ',i)
     %fprintf('%d ',midArray);
+    if(size(midpx,1)==0)
+    midpx = [midpx;0];
+    end
+    %fprintf(fileID2,'%d ',[min(midArray),max(midArray),sum(midArray)]);
+    fprintf(fileID2,'%d ',min(min(midpx)));
+    fprintf(fileID2,'%d ',max(max(midpx)));
+    fprintf(fileID2,'%d ',sum(sum((midpx))));
+    %globalcount = globalcount+3;
+    %disp('90<180');
+    %disp(globalcount);
+    
     %fprintf('\n');
     fprintf(fileID,'%d ',size(midpx,1));
     cutPoints = [cutPoints,size(midpx,1)];
@@ -316,6 +342,17 @@ while i<270
     midArray =  padarray(midpx,10-size(midpx,1),0,'post');
     %fprintf('angle %d Cutting points ',i)
     %fprintf('%d ',midArray);
+    %fprintf(fileID2,'%d ',[min(midArray),max(midArray),sum(midArray)]);
+     if(size(midpx,1)==0)
+    midpx = [midpx;0];
+    end
+    %fprintf(fileID2,'%d ',[min(midArray),max(midArray),sum(midArray)]);
+    fprintf(fileID2,'%d ',min(min(midpx)));
+    fprintf(fileID2,'%d ',max(max(midpx)));
+    fprintf(fileID2,'%d ',sum(sum((midpx))));
+   % globalcount = globalcount+3;
+   %  disp('180<270');
+   % disp(globalcount);
     %fprintf('\n');
     fprintf(fileID,'%d ',size(midpx,1));
     cutPoints = [cutPoints,size(midpx,1)];
@@ -405,6 +442,16 @@ while i<360
     midArray =  padarray(midpx,10-size(midpx,1),0,'post');
     %fprintf('angle %d Cutting points ',i)
     %fprintf('%d ',midArray);
+    %fprintf(fileID2,'%d ',[min(midArray),max(midArray),sum(midArray)]);
+    if(size(midpx,1)==0)
+    midpx = [midpx;0];
+    end
+    %fprintf(fileID2,'%d ',[min(midArray),max(midArray),sum(midArray)]);
+    fprintf(fileID2,'%d ',min(min(midpx)));
+    fprintf(fileID2,'%d ',max(max(midpx)));
+    fprintf(fileID2,'%d ',sum(sum((midpx))));
+    %globalcount = globalcount+3;
+    %disp(globalcount);
     %fprintf('\n');
     fprintf(fileID,'%d ',size(midpx,1));
     cutPoints = [cutPoints,size(midpx,1)];
@@ -416,7 +463,9 @@ hold off;
 figure, imshow(char2);
 figure, plot(cutPoints);
 fprintf(fileID,'\n');
+fprintf(fileID2,'\n');
 fclose(fileID);
+fclose(fileID2);
 return
 
 end
