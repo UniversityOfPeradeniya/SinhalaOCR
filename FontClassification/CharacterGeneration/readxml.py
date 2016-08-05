@@ -1,6 +1,14 @@
 import lxml.etree as ET
 import sys
 
+#read fonts file
+
+fd = open('fonts.txt','r')
+fonts = fd.readlines()
+for i in range(0,len(fonts)):
+    fonts[i]= fonts[i].strip('\n')
+
+
 tree = ET.parse('sa.xml')
 root = tree.getroot()
 pkg = '{http://schemas.microsoft.com/office/2006/xmlPackage}'
@@ -16,14 +24,52 @@ data = data[0][0][0]
 
 table = data.find(w+'tbl')
 rows = table.findall(w+'tr')
-for i in range(0,100):
+
+#no of rows
+#-1 because we already have a row
+noOfRows = len(fonts)/3 - 1
+
+for i in range(0,noOfRows):
     new_element = ET.fromstring(ET.tostring(rows[0]))
     table.append(new_element)
 #rows.pop()
 #rows.pop()
+
+rows = table.findall(w+'tr')
+
+fontindex = 0
+
+for r in range(0,len(rows)):
+    
+    row = rows[r]
+    cols = row.findall(w+'tc')
+    for c in range(0,len(cols)):
+        newfont = fonts[fontindex]
+        col = cols[c]
+        wp = col.find(w+'p').getchildren()
+        print wp
+        #inside there is two fond declarations, I should change both
+        for i in range(0,len(wp)):
+            tab = wp[i]
+            try:
+                oldfont = tab.find(w+'rPr').find(w+'rFonts')
+                for key in oldfont.keys():
+                    print oldfont.attrib[key]
+                    print newfont
+                    oldfont.attrib[key] = newfont
+                        
+            except:
+                print tab,' Does not have font field'
+        fontindex+=1
+
 
 doc = ET.ElementTree(root)
 
 outFile = open('sa_.xml', 'w')
 doc.write(outFile, encoding='utf-8') 
 outFile.close()
+
+
+
+
+
