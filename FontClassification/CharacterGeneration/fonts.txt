@@ -1,36 +1,380 @@
-aKandyNew
-aKandyNewSupplement
-DL-Araliya..
-DL-Biso.
-DL-KUSUMI
-DL-Paras.
-DL-Ridhma.
-DL-Sarala.
-FMEconbld
-Kandy
-Lankanatha
-Lankatilaka
-NIDAHASA Hiru
-NIDAHASA Chapa
-NIDAHASA Madu
-NIDAHASA Sandareka
-NIDAHASA Sarasavi
-4u-Arjun
-0KDARALIYA
-0KDBOLIDDA
-0KDMANEL
-0KDNAMAL
-0KDROSE
-0KDSAMAN
-4u-Ajantha
-4u-Amantha
-4u-Ananda
-4u-Asiri
-4u-Bindumathi
-4u-Derana
-4u-Emanee
-4u-Ganganee
-4u-Gemunu
-4u-Indumathi
-4u-Malith
-4u-MANEL
+0kd-namal
+0kd-olu_
+0kd-rose
+0kdaraliya
+0kdbolidda  bold
+0kdbo___
+0kdmanel
+0kdnamal
+0kdolu
+0kdrose
+0kdsaman
+4u-ajantha  
+4u-ajantha
+4u-amantha  
+4u-amantha
+4u-anananda
+4u-ananda ultrabold
+4u-anurada
+4u-anuradha
+4u-araliya-sa
+4u-araliya-spot     
+4u-araliya-spot
+4u-araliya-wrap
+4u-araliya. shatter
+4u-araliya. warp
+4u-araliya.
+4u-araliya
+4u-arjun
+4u-asiri  
+4u-asiri
+4u-basuru
+4u-bindumathi
+4u-chami.
+4u-chami
+4u-derana
+4u-dilini     
+4u-dilini
+4u-emanee
+4u-ganganee
+4u-gayani
+4u-gemunu
+4u-ice.
+4u-ice
+4u-indumathi  
+4u-indumathi
+4u-madu   
+4u-madu-cata
+4u-madu. cactus
+4u-madu
+4u-malith  
+4u-malithi
+4u-manel
+4u-nadeesha
+4u-nilakshi
+4u-nisansala.
+4u-nisansala
+4u-raja   
+4u-raja
+4u-rajantha
+4u-ranee  
+4u-ranee
+4u-ridhma.
+4u-ridma
+4u-samantha
+4u-sasika   
+4u-sasika
+4u-sawana
+a araliya
+a dilini
+a malathi.
+a manel x
+a saman
+a sanath
+a sarala.
+a senani
+a sinhala apple
+a thisaru
+a10yasar
+a10yasarath
+a12yasar
+a12yasarath
+a13yasar
+a13yasarath
+aa amali
+aa-anurada
+aa-muthu
+aa-ridhma.
+aa-ruwan
+aa-shantha.
+aa-sinh6
+aa-sinhala 4
+aa-sinhala 5
+aa-sinhala 8
+aa-sinhala 9
+aarrr
+aa_amali
+aa_sinhala_3
+aa_sinhala_4
+aa_sinhala_5
+aa_sinhala_6
+aa_sinhala_8
+aa_sinhala_9
+ahashirw
+ahashirwada
+ahbanti
+ahbanti_
+ahcow
+ahcow___
+ahdumind
+ahduminda
+aherash
+aherash_
+ahfan
+ahfan___
+ahfox
+ahfox___
+ahganga
+ahganga_
+ahhiru
+ahhiru__
+ahindu
+ahindu__
+ahjina
+ahjina__
+ahkalani
+ahlilie
+ahlilie_
+ahmelani
+ahnelum
+ahnelum_
+ahoshada
+ahpiumi
+ahpiumi_
+ahqice
+ahqice__
+ahranjan
+ahranjana
+ahsuba
+ahsuba__
+ahtharan
+ahtharanga
+ajith new
+aluthge
+amalee plain
+amalee
+amalee_plain
+amarabandu
+amila normal
+amshiru
+amstharu
+am_ab___
+am_amalee thin
+am_araliya bold
+am_at___
+am_parasathu semibold
+am_psb__
+ananb___
+ananda bold
+ananda heavy
+ananda light
+ananda light2
+ananda ultrabold
+ananda
+ananh___
+ananl___
+anub____
+anupama
+anura
+anuradha  bold
+anuradha bold
+anuradha-pc
+anuradha
+an______
+apple97
+apple98
+aradana bold
+aradana
+aradana_
+aradb___
+aradhan2
+aradhana 2
+aradhana bold
+aradhana dbold
+aradhana
+aradhana_bold
+araliaya
+araliya
+araliya_
+arunalu
+asinhala apple
+asinhalaapple
+asinhalaapple_mid normal
+asinhala_apple
+a_dilini
+a_manelx
+a_mathali
+a_saman
+a_sanayh
+a_sarala
+a_senani
+a_thisaru
+bandula normal
+br hansika
+br ridhma
+br-hansika.
+br-ridhma.
+bu dadunu by madumal
+bu_nilmi
+bu_nisansala
+bu_nisha
+chamara normal 2
+chamara normal
+chamara
+chamath huru
+chamath_huru
+chapa
+cps 168
+cps 187
+cps 20
+d1-hansika
+d1-hd
+damayanthi
+damindu_ tall
+damtall
+damtall0
+dastall
+daswide
+dcampika
+devanmini - future
+devanmini-future
+dharmavathy regular
+dhs_____
+di-hd
+dilani
+dilrukshi
+dimub___
+dimurg__
+dimuthu bold
+dimuthu
+di_hd
+dk
+dl - anupama..
+dl - anurada 
+dl - araliya..
+dl - araliya
+dl - biso
+dl - devani- n
+dl - dulackshi
+dl - hansika
+dl - harini
+dl - hd
+dl - ice
+dl - kinduru
+dl - kotu
+dl - kusumi
+dl - lihini - 22
+dl - lihini - ex
+dl - lihini
+dl - manel - bold
+dl - manel
+dl - paras
+dl - priyanwada
+dl - ridhma - ii - bold
+dl - ridhma
+dl - sarala
+dl - sumudu
+dl araliya li
+dl araliya
+dl biso
+dl divani n
+dl dulackshi 2
+dl dulackshi 3
+dl dulackshi
+dl hansika
+dl hd 2
+dl hd
+dl hd2
+dl kiduru
+dl kotu 2
+dl kotu
+dl kusumi
+dl lihini 22  2
+dl lihini 22
+dl lihini ex
+dl lihini
+dl nisansala
+dl paras 1
+dl paras 2
+dl paras 4
+dl paras
+dl priyanwada
+dl ridhma 2
+dl ridhma
+dl sarala 2
+dl sarala
+dl sumudu 2
+dl sumudu
+dl-aa-ruwan
+dl-aloka.
+dl-aloka
+dl-anupama..
+dl-anurada
+dl-araliya-co..
+dl-araliya-ex..
+dl-araliya-ii..
+dl-araliya. shatter
+dl-araliya. warp
+dl-araliya.-841619-
+dl-araliya.
+dl-araliya
+dl-araliya841619
+dl-badra-bold-x
+dl-biso.
+dl-biso
+dl-champika
+dl-dilrukshi
+dl-divani-n
+dl-dulackshi.
+dl-dulackshi
+dl-hansika.
+dl-hansika
+dl-harini.
+dl-hd
+dl-ice.
+dl-ice
+dl-kiduru
+dl-kotu
+dl-kusumi
+dl_aa_ruwan
+dl_aloka
+dl_anupama
+dl_anuradha
+dl_araliya
+dl_araliya2
+dl_araliya3
+dl_araliya841619
+dl_biso
+dl_champika
+dl_dulackshi
+dl_hansika
+dl_hansika2
+dl_han_1
+dl_harini
+dl_hd
+dl_ice
+dl_kusumi
+dl_lihini
+dl_malathi
+dl_malithi
+dl_manel
+dl_manel_bold
+dl_manel_bolt_x
+dl_mangala
+dl_mano
+dl_maxx
+dl_mila
+dl_nelumi
+dl_nirosha
+dl_nisansala
+dl_paras
+dl_parasa
+dl_parasa2
+dl_piyanwada
+dl_priyanwada
+dl_priyanwadha
+dl_ridhma
+dl_ridhma2
+dl_ridhma3652
+dl_ridma
+dl_ridma_ii_bolt
+dl_sarala
+dl_sumudu
+dl___malathi
+dl___male
+dl___manel___bold
+dl___nisansala
+dl___paras
+dl___pumi
+dl___ridhma
+dl___sumudhu

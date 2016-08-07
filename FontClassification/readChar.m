@@ -10,7 +10,8 @@ fileID = fopen([fname,'.txt'],'w');
 fileID2 = fopen([fname,'-d.txt'],'w');
 char = imcomplement(char);
 char2 = char;
-figure,imshow(char);
+
+%figure,imshow(char);
 originaldim = size(char);
 
 globalcount = 0;
@@ -68,7 +69,8 @@ while i<90
     [x,y] = pol2cart(theta,rho);
     x=round(x);%+round(originaldim(1)));
     y=round(y);%+round(originaldim(2)));
-    plot(x,y,'r');
+    
+    %plot(x,y,'r');
 
     valarray=[];
     %iterate through x,y
@@ -171,7 +173,7 @@ while i<180
     [x,y] = pol2cart(theta,rho);
     x=round(x+round(originaldim(1)));
     y=round(y);%+round(originaldim(2)));
-    plot(x,y,'r');
+    %plot(x,y,'r');
 
     valarray=[];
     %iterate through x,y
@@ -271,7 +273,7 @@ while i<270
     [x,y] = pol2cart(theta,rho);
     x=round(x+round(originaldim(1)));
     y=round(y+round(originaldim(2)));
-    plot(x,y,'r');
+    %plot(x,y,'r');
 
     valarray=[];
     %iterate through x,y
@@ -371,7 +373,7 @@ while i<360
     [x,y] = pol2cart(theta,rho);
     x=round(x);%+round(originaldim(1)));
     y=round(y+round(originaldim(2)));
-    plot(x,y,'r');
+    %plot(x,y,'r');
 
     valarray=[];
     %iterate through x,y
@@ -460,8 +462,9 @@ while i<360
 end
 
 hold off;
-figure, imshow(char2);
-figure, plot(cutPoints);
+
+%figure, imshow(char2);
+%figure, plot(cutPoints);
 fprintf(fileID,'\n');
 fprintf(fileID2,'\n');
 fclose(fileID);

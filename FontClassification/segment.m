@@ -1,6 +1,6 @@
 function[]= segment(a,lineNumber)
 
-folder = 'sa/';
+folder = 'allChars/';
 
 %a = imread('sample.png');
 %imshow(a);
@@ -22,10 +22,12 @@ i=padarray(a,[0 padlength]);
 
 %VP
 verticalProjection = sum(i, 1);
-set(gcf, 'Name', 'Character sectioning', 'NumberTitle', 'Off') 
-subplot(2, 2, 1);imshow(i); 
-subplot(2,2,3);
-plot(verticalProjection, 'b-');
+
+%when you want to enable vertical projection plot use this
+%set(gcf, 'Name', 'Character sectioning', 'NumberTitle', 'Off') 
+%subplot(2, 2, 1);imshow(i); 
+%subplot(2,2,3);
+%plot(verticalProjection, 'b-');
 
 %process vertical projection
 

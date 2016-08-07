@@ -1,7 +1,7 @@
-function [ ] = interface()
+function [ ] = interface(dirName)
 %interface will open all the png images in folder and segment them
 
-dirName = '';              %# folder path
+%dirName = '';              %# folder path
 files = dir( fullfile(dirName,'*.png') );   %list all *.png files
 files = {files.name}';                      % file names
 

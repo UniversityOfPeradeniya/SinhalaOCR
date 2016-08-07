@@ -26,10 +26,10 @@ i=padarray(c,[0 padlength]);
 %VP
 verticalProjection = sum(i, 1);
 
-set(gcf, 'Name', 'Segmentation Trial', 'NumberTitle', 'Off') 
-subplot(2, 2, 1);imshow(i); 
-subplot(2,2,3);
-plot(verticalProjection, 'b-');
+%set(gcf, 'Name', 'Segmentation Trial', 'NumberTitle', 'Off') 
+%subplot(2, 2, 1);imshow(i); 
+%subplot(2,2,3);
+%plot(verticalProjection, 'b-');
 
 %process vertical projection
 
@@ -46,7 +46,9 @@ while idx < arrayLen-padlength
     windows = [windows,sumofElements];
     idx=idx+1;
 end
-figure,plot(windows, 'g-');
+
+%When you want to plot enable this
+%figure,plot(windows, 'g-');
 
 
 idx = 1;

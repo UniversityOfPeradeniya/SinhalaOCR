@@ -1,9 +1,27 @@
 import lxml.etree as ET
 import sys
+from math import ceil
+import os
+
+#list fonts directory
+
+fontfile = 'text-2.txt'
+
+'''
+fontCollection = []
+for file in os.listdir("../sinhalaFontList"):
+    if file.endswith(".TTF") or file.endswith(".ttf"):
+        fontCollection.append(file.lower().replace('.ttf','\n'))
+print fontCollection
+
+fd = open(fontfile,'w')
+fd.writelines(fontCollection)
+fd.close()
+'''
 
 #read fonts file
 
-fd = open('fonts.txt','r')
+fd = open(fontfile,'r')
 fonts = fd.readlines()
 for i in range(0,len(fonts)):
     fonts[i]= fonts[i].strip('\n')
@@ -27,7 +45,7 @@ rows = table.findall(w+'tr')
 
 #no of rows
 #-1 because we already have a row
-noOfRows = len(fonts)/3 - 1
+noOfRows = int(ceil(len(fonts)/3.0)) - 1
 
 for i in range(0,noOfRows):
     new_element = ET.fromstring(ET.tostring(rows[0]))
@@ -44,6 +62,8 @@ for r in range(0,len(rows)):
     row = rows[r]
     cols = row.findall(w+'tc')
     for c in range(0,len(cols)):
+        if(fontindex>=len(fonts)):
+            break
         newfont = fonts[fontindex]
         col = cols[c]
         wp = col.find(w+'p').getchildren()
