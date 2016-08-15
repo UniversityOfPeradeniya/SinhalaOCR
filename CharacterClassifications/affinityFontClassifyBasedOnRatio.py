@@ -15,9 +15,9 @@ fileNames = []
 
 
 def processInputArray(ar):
-    ratio = ar[0]
-    ret = [ar[1]/ratio,ar[2]/ratio]
-    return ret
+    #ratio = ar[0]
+    #ret = [ar[1]/ratio,ar[2]/ratio]
+    return ar
 
 def main():
     #remove sub folders

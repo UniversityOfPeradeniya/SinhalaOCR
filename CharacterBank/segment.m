@@ -1,6 +1,6 @@
 function[]= segment(a,lineNumber)
 
-folder = 'testChars/';
+folder = 'englishChars/';
 
 %a = imread('sample.png');
 %imshow(a);
@@ -43,7 +43,7 @@ while idx < arrayLen-padlength
     idx=idx+1;
 end
 plot(windows, 'g-');
-hold off;
+
 %analyze windows array
 
 idx = 1;

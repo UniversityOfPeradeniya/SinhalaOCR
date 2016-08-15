@@ -5,7 +5,7 @@ import numpy as np
 import shutil
 
 path = 'allChars\\'
-n_digits = 10
+n_digits = 15
 algorithm = 'kmeans'
 extension = '-r.txt'
 #list all the txt files in the folder
