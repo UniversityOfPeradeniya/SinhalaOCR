@@ -1,6 +1,6 @@
 function[]= segment(a,lineNumber)
 
-folder = 'englishChars/';
+folder = 'char/';
 
 %a = imread('sample.png');
 %imshow(a);

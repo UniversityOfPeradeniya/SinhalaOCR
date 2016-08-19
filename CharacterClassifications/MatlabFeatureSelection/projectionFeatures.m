@@ -5,12 +5,12 @@ function [ratio] = projectionFeatures( fname )
 char = imread([fname,'.png']);
 char90 = imrotate(char,90);
 fileID = fopen([fname,'-r.txt'],'w');
-fileID2 = fopen([fname,'-p.txt'],'w');
+% fileID2 = fopen([fname,'-p.txt'],'w');
 %fileID2 = fopen([fname,'-d.txt'],'w');
 char = imcomplement(char);
 char90 = imcomplement(char90);
 
-charvector = reshape(char',size(char,1)*size(char,2),1);
+% charvector = reshape(char',size(char,1)*size(char,2),1);
 
 %VP
 verticalProjection = sum(char, 1);
@@ -105,9 +105,9 @@ fclose(fileID);
 
 
 %writing pixel values as a vector
-fprintf(fileID2,'%d ',charvector);
-fprintf(fileID2,'\n');
-fclose(fileID2);
+% fprintf(fileID2,'%d ',charvector);
+% fprintf(fileID2,'\n');
+% fclose(fileID2);
 
 
 return;
